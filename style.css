@@ -129,7 +129,7 @@ html, body{
 
 .power-text ul li{
     display: inline-block;
-    color: white;
+    color: gray;
     font-family: 'Noto Sans', sans-serif;
     margin: 0 8px;
     font-size: 28px;
@@ -153,7 +153,7 @@ html, body{
     }
 
     50%{
-        color: darkred;
+        color: white;
         opacity: 1;
         transform: translateX(0px);
     }
@@ -167,7 +167,7 @@ html, body{
     100%{
         opacity: 0;
         transform: translateX(-80px);
-        color: white;
+        color: gray;
 
     }
 

@@ -319,11 +319,13 @@ html, body{
 @media only screen and (max-width: 1024px) {
 
     .electric-text ul li{
-        font-size: 20px;
+        font-size: 18px;
+        margin: 0 4px;
     }
 
     .power-text ul li{
-        font-size: 18px;
+        font-size: 16px;
+        margin: 0 6px;
     }
 
     .heading{
@@ -331,11 +333,41 @@ html, body{
     }
 
     .heading ul li{
-        margin: 0 2px;
+        margin: 0 4px;
     }
 
     .enter h1 a{
         font-size: 0.7em;
+    }
+
+    .enter{
+        top: 52%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .electric-text ul li{
+        font-size: 16px;
+        margin: 0 2px;
+    }
+
+    .power-text ul li{
+        font-size: 18px;
+        margin: 0 2.5px;
+    }
+
+    .heading{
+        font-size: 7px;
+    }
+
+    .heading ul li{
+        margin: 0 2px;
+    }
+
+    .enter h1 a{
+        font-size: 0.5em;
     }
 
 }

@@ -227,8 +227,8 @@ html, body{
 
 .heading{
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     animation: dropIn 4s ease-in forwards;
     animation-delay: 5s;
@@ -242,8 +242,9 @@ html, body{
 }
 
 .heading ul li{
+    display: inline-block;
     color: #ffdd8c;
-    font-size: 60px;
+    font-size: 4em;
     font-family: 'Noto Sans', sans-serif;
     margin: 0 8px;
     text-transform: uppercase;
@@ -264,62 +265,79 @@ html, body{
 }
 
 .enter{
-    padding: 0;
     position: absolute;
-    margin: 0 auto;
-    max-width: 200px;
-    font-size: 30px;
-    font-family: 'Noto Sans', sans-serif;
-    left: 40%;
-    top: 40%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.enter h1 a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffdd8c;
     animation: dropIn 4s ease-in forwards;
     animation-delay: 5s;
     opacity: 0;
 }
 
-.enter p a {
-    display: inline-block;
-    text-decoration: none;
-    color: #ffdd8c;
-    font-weight: bold;
-    font-size: 1.25em;
-    position: relative;
-    padding: 1em 1em;
-    overflow: hidden;
-    transition: 0.3s ease;
-}
-
-.enter a:before{
+.enter h1 a:before{
     content: '';
     display: block;
-    height: 1em;
-    width: 1em;
-    border-bottom: 2px solid #ffdd8c;
-    border-left: 2px solid #ffdd8c;
+    height: 0.75em;
+    width: 0.75em;
+    border-bottom: 1.5px solid #ffdd8c;
+    border-left: 1.5px solid #ffdd8c;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -0.55em;
+    bottom: 0.2em;
     transition: 0.3s ease;
 }
 
-.enter a:after{
+.enter h1 a:after{
     content: '';
     display: block;
-    height: 1em;
-    width: 1em;
-    border-top: 2px solid #ffdd8c;
-    border-right: 2px solid #ffdd8c;
+    height: 0.75em;
+    width: 0.75em;
+    border-top: 1.5px solid #ffdd8c;
+    border-right: 1.5px solid #ffdd8c;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -0.55em;
+    top: 0.2em;
     transition: 0.3s ease;
 }
 
-.enter a:hover::before,
-.enter a:hover::after{
-    width: 100%;
+.enter h1 a:hover::before,
+.enter h1 a:hover::after{
+    width: 150%;
     height: 100%;
+    transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .electric-text ul li{
+        font-size: 20px;
+    }
+
+    .power-text ul li{
+        font-size: 18px;
+    }
+
+    .heading{
+        font-size: 10px;
+    }
+
+    .heading ul li{
+        margin: 0 2px;
+    }
+
+    .enter h1 a{
+        font-size: 0.7em;
+    }
+
 }
 
 

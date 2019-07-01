@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polestar Concept</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+<div class="navigation">
+    <header class="first-block">
+        <nav>
+            <div class="hamburger-menu">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
+            <div class="logo">
+                <h3>POLESTAR</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy Now</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".hamburger-menu").on('click', function() {
+            $("nav ul").toggleClass("showing");
+
+        });
+    });
+</script>
+
+</body>
+</html>

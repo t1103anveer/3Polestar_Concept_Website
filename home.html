@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="navigation">
-    <header class="first-block">
+<div class="first-block">
+    <header>
         <nav>
             <div class="hamburger-menu">
                 <div class="line-one"></div>
@@ -30,6 +30,8 @@
             </div>
         </nav>
     </header>
+</div>
+<div class="second-block">
 
 </div>
 
@@ -40,6 +42,15 @@
 
         });
     });
+
+    $(window).on("scroll", function () {
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    })
 </script>
 
 </body>

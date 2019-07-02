@@ -92,10 +92,9 @@ div .line-three{
 
     .logo{
         position: fixed;
-        top: 0;
-        right: 0;
-        margin-top: 0;
         cursor: default;
+        top: 0;
+        right: 10px;
     }
 
     nav{

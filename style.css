@@ -56,6 +56,7 @@ nav ul li a {
 
 nav ul li a:hover{
     color: #ffdd8c;
+    font-size: 18px;
 }
 
 .hamburger-menu{

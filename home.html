@@ -37,7 +37,7 @@
 
 <script>
     $(document).ready(function() {
-        $(".hamburger-menu").on('click touchstart', function() {
+        $(".hamburger-menu").on(selectEvents, function() {
             $("nav ul").toggleClass("showing");
 
         });
@@ -51,6 +51,13 @@
             $('nav').removeClass('black');
         }
     })
+
+    var selectEvents = (function() {
+        if ('ontouchstart' in document === true)
+            return 'touchstart';
+        else
+            return 'click';
+    })();
 </script>
 
 </body>

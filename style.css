@@ -14,6 +14,7 @@ html, body{
 nav{
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .logo{
@@ -93,6 +94,7 @@ div .line-three{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 40px;
     cursor: default;
+    z-index: 1;
 }
 
 .typewriter-heading{
@@ -173,5 +175,6 @@ div .line-three{
         position: absolute;
         top: 15%;
         left: 10%;
+        z-index: 1;
     }
 }

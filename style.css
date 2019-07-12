@@ -88,6 +88,27 @@ div .line-three{
     width: 30px;
 }
 
+.header-sub-title {
+    color: #848689;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+    cursor: default;
+}
+
+.typewriter-heading{
+    display: flex;
+    position: absolute;
+    top: 32%;
+    left: 35%;
+}
+
+.blink {
+    animation: blink 0.5s infinite;
+}
+@keyframes blink{
+    to { opacity: .0; }
+}
+
 .second-block{
     height: 100vh;
     width: 100%;
@@ -141,5 +162,16 @@ div .line-three{
         display: block;
         margin: 16px 0 10px;
         left: 10px;
+    }
+
+    .header-sub-title{
+        font-size: 30px;
+    }
+
+    .typewriter-heading{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        left: 10%;
     }
 }

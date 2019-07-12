@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polestar Concept</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,6 +31,10 @@
             </div>
         </nav>
     </header>
+    <div class="typewriter-heading">
+        <p class="header-sub-title" id="word"></p>
+        <p class="header-sub-title blink">|</p>
+    </div>
 </div>
 <div class="second-block">
 
@@ -50,7 +55,7 @@
         else{
             $('nav').removeClass('black');
         }
-    })
+    });
 
     var selectEvents = (function() {
         if ('ontouchstart' in document === true)
@@ -58,6 +63,47 @@
         else
             return 'click';
     })();
+</script>
+<script>
+    const words = ["P E R F E C T I O N . . .", "P O W E R . .", "P O L E S T A R."];
+    let i = 0;
+    let timer;
+
+    function typingEffect() {
+        let word = words[i].split("");
+        var loopTyping = function() {
+            if (word.length > 0) {
+                document.getElementById('word').innerHTML += word.shift();
+            } else {
+                deletingEffect();
+                return false;
+            };
+            timer = setTimeout(loopTyping, 100);
+        };
+        loopTyping();
+    };
+
+    function deletingEffect() {
+        let word = words[i].split("");
+        var loopDeleting = function() {
+            if (word.length > 0) {
+                word.pop();
+                document.getElementById('word').innerHTML = word.join("");
+            } else {
+                if (words.length > (i + 1)) {
+                    i++;
+                } else {
+                    i = 0;
+                };
+                typingEffect();
+                return false;
+            };
+            timer = setTimeout(loopDeleting, 100);
+        };
+        loopDeleting();
+    };
+
+    typingEffect();
 </script>
 
 </body>

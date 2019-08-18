@@ -112,9 +112,77 @@ div .line-three{
 }
 
 .second-block{
-    height: 100vh;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+.performance-picture{
+    background: url("Images/Polestar-front-side.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.performance-text{
+    width: 50%;
+    height: 100%;
+    background-color: gainsboro;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h4{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    margin: 25px;
+    letter-spacing: 2px;
+}
+
+.performance-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 35px 25px 0 25px;
+    letter-spacing: 0.5px;
+}
+
+.third-block{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+.interior-picture{
+    background: url("Images/ps2_london_interior_1.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.interior-text {
+    background-color: gainsboro;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.interior-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 35px 25px 0 25px;
+    letter-spacing: 0.5px;
+}
+
+.fourth-block{
+    height: 50vh;
     width: 100%;
 }
+
 
 @media only screen and (max-width: 650px) {
 
@@ -176,5 +244,26 @@ div .line-three{
         top: 15%;
         left: 10%;
         z-index: 1;
+    }
+
+    h4{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        margin: 25px;
+        letter-spacing: 2px;
+    }
+
+    .performance-text p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        margin: 35px 25px 0 25px;
+        letter-spacing: 0.5px;
+    }
+
+    .interior-text p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        margin: 35px 25px 0 25px;
+        letter-spacing: 0.5px;
     }
 }

@@ -115,23 +115,25 @@ div .line-three{
     height: 50vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .performance-picture{
     background: url("Images/Polestar-front-side.jpg") 50% 50% no-repeat;
     background-size: cover;
-    width: 50%;
     height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    min-width: 200px;
+    width: 50%;
+    flex-grow: 1;
 }
 
 .performance-text{
-    width: 50%;
+    min-width: 250px;
+    max-width: 50%;
+    flex-grow: 1;
     height: 100%;
     background-color: gainsboro;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 h4{
@@ -148,27 +150,21 @@ h4{
     letter-spacing: 0.5px;
 }
 
-.third-block{
-    height: 50vh;
-    width: 100%;
-    display: flex;
-}
-
 .interior-picture{
     background: url("Images/ps2_london_interior_1.jpg") 50% 50% no-repeat;
     background-size: cover;
-    width: 50%;
     height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 50%;
+    min-width: 200px;
+    flex-grow: 1;
 }
 
 .interior-text {
     background-color: gainsboro;
-    width: 50%;
+    min-width: 250px;
+    max-width: 50%;
+    flex-grow: 1;
     height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .interior-text p{
@@ -176,11 +172,6 @@ h4{
     font-size: 16px;
     margin: 35px 25px 0 25px;
     letter-spacing: 0.5px;
-}
-
-.fourth-block{
-    height: 50vh;
-    width: 100%;
 }
 
 

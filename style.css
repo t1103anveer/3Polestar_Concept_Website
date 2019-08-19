@@ -140,14 +140,14 @@ div .line-three{
 
 h4{
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     margin: 25px;
     letter-spacing: 2px;
 }
 
 .performance-text p{
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin: 35px 25px 0 25px;
     letter-spacing: 0.5px;
 }
@@ -176,6 +176,31 @@ h4{
     font-size: 16px;
     margin: 35px 25px 0 25px;
     letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .header-sub-title{
+        font-size: 28px;
+    }
+
+    .typewriter-heading{
+        top: 35%;
+        left: 30%;
+
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .performance-text p{
+        font-size: 16px;
+    }
+
+    .interior-text p{
+        font-size: 16px;
+    }
 }
 
 

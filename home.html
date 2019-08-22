@@ -6,7 +6,8 @@
     <title>Polestar Concept</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP|Oswald|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -38,8 +39,8 @@
 </div>
 <div class="second-block">
     <div class="performance-text">
-        <h4>PURPOSE. PERFORMANCE. PROGRESSION.</h4>
-        <p>Polestar 1 is where world-class engineering and high-grade components meet uncompromised design.
+        <h4 class="wow fadeInUp">PURPOSE. PERFORMANCE. PROGRESSION.</h4>
+        <p class="wow fadeInUp">Polestar 1 is where world-class engineering and high-grade components meet uncompromised design.
             Beautiful lines with powerful, sculpted exterior surfaces are combined with state-of-the-art technology underneath.
             Each and every part, every detail, is there for a reason.
             The Polestar 1 is a plug-in hybrid with two electric motors driving the rear wheels and a petrol engine driving the front wheels.
@@ -50,17 +51,22 @@
     <div class="interior-picture">
 
     </div>
-    <div class="interior-text">
-        <h4>CUTTING EDGE INTERIOR.</h4>
-        <p>Both the interior and exterior design can be customized according to your preferences.
+    <div class="interior-text wow fadeInUp">
+        <h4 class="wow fadeInUp">CUTTING EDGE INTERIOR.</h4>
+        <p class="wow fadeInUp">Both the interior and exterior design can be customized according to your preferences.
             Choose between six exclusive exterior colours – all available in metallic or matte versions – carefully selected to match the design of the car.
             Add a unique touch with your personal choice of upholsteries, rims and brightwork, making sure you get the Polestar 1 the way you want it.</p>
 
     </div>
 </div>
-<div class="fourth-block">
+<div class="third-block">
 
 </div>
+
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 <script>
     $(document).ready(function() {

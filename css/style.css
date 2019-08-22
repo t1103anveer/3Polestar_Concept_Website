@@ -8,7 +8,7 @@ html, body{
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background: url("Images/Polestar-cliff.jpg") 60% 10% no-repeat;
+    background: url("../Images/Polestar-cliff.jpg") 60% 10% no-repeat;
 }
 
 nav{
@@ -100,8 +100,8 @@ div .line-three{
 .typewriter-heading{
     display: flex;
     position: absolute;
-    top: 32%;
-    left: 35%;
+    top: 30%;
+    left: 34%;
 }
 
 .blink {
@@ -120,7 +120,7 @@ div .line-three{
 }
 
 .performance-picture{
-    background: url("Images/Polestar-front-side.jpg") 50% 50% no-repeat;
+    background: url("../Images/Polestar-front-side.jpg") 50% 50% no-repeat;
     background-size: cover;
     height: 100%;
     min-width: 300px;
@@ -153,7 +153,7 @@ h4{
 }
 
 .interior-picture{
-    background: url("Images/ps2_london_interior_1.jpg") 50% 50% no-repeat;
+    background: url("../Images/ps2_london_interior_1.jpg") 50% 50% no-repeat;
     background-size: cover;
     height: 100%;
     width: 50%;
@@ -173,9 +173,17 @@ h4{
 
 .interior-text p{
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin: 35px 25px 0 25px;
     letter-spacing: 0.5px;
+}
+
+.third-block{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1000px){
@@ -187,7 +195,6 @@ h4{
     .typewriter-heading{
         top: 35%;
         left: 30%;
-
     }
 
     h4{

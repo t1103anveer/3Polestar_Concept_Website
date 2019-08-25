@@ -136,7 +136,7 @@ div .line-three{
 }
 
 .second-block{
-    height: 50vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -146,7 +146,7 @@ div .line-three{
 .performance-picture{
     background: url("../Images/Polestar-front-side.jpg") 50% 50% no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 50%;
     min-width: 300px;
     width: 50%;
     flex-grow: 1;
@@ -156,7 +156,7 @@ div .line-three{
 .performance-text{
     min-width: 250px;
     flex-grow: 1;
-    height: 100%;
+    height: 50%;
     background-color: gainsboro;
     max-width: 50%;
     order: 1;
@@ -179,7 +179,7 @@ h4{
 .interior-picture{
     background: url("../Images/ps2_london_interior_1.jpg") 50% 50% no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 50%;
     width: 50%;
     min-width: 300px;
     flex-grow: 1;
@@ -190,7 +190,7 @@ h4{
     background-color: gainsboro;
     min-width: 250px;
     flex-grow: 1;
-    height: 100%;
+    height: 50%;
     max-width: 50%;
     order: 4;
 }
@@ -203,11 +203,16 @@ h4{
 }
 
 .third-block{
-    height: 50vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.theme-one{
+    width: 30%;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 1000px){
@@ -306,7 +311,11 @@ h4{
 
     .performance-text{
         max-width: 100%;
-        height: 75%;
+        height: 25%;
+    }
+
+    .performance-picture{
+        height: 25%;
     }
 
     .performance-text p{
@@ -318,12 +327,13 @@ h4{
 
     .interior-text{
         max-width: 100%;
-        height: 75%;
+        height: 25%;
         order: 3;
     }
 
     .interior-picture{
         order: 4;
+        height: 25%;
     }
 
     .interior-text p{

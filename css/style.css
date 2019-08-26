@@ -301,10 +301,6 @@ h5{
 
 @media only screen and (max-width: 650px) {
 
-    .first-block{
-        background-position: 70% 10%;
-    }
-
     .logo{
         position: fixed;
         top: 0;

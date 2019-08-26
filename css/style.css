@@ -364,6 +364,10 @@ h5{
         letter-spacing: 2px;
     }
 
+    .second-block{
+        height: 140vh;
+    }
+
     .performance-text{
         max-width: 100%;
         height: 25%;

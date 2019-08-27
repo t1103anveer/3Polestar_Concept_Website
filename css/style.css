@@ -351,8 +351,12 @@ h5{
         letter-spacing: 2px;
     }
 
+    .first-block{
+        height: 85vh;
+    }
+
     .second-block{
-        height: 120vh;
+        height: 150vh;
     }
 
     .performance-text{

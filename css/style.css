@@ -8,7 +8,6 @@ html, body{
 .first-block{
     width: 100%;
     height: 100vh;
-    background-size: cover;
 }
 
 .video-container{
@@ -353,6 +352,12 @@ h5{
 
     .first-block{
         height: 85vh;
+    }
+
+    .video-container{
+        position: absolute;
+        width: 100%;
+        height: 85%;
     }
 
     .second-block{

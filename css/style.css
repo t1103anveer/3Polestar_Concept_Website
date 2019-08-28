@@ -251,7 +251,7 @@ h5{
     font-size: 24px;
     font-weight: lighter;
     letter-spacing: 2px;
-    margin: 10px;
+    margin: 25px;
     font-family: 'Noto Sans JP', sans-serif;
     transition: 1.5s;
 }
@@ -461,5 +461,9 @@ h5{
         font-size: 12px;
         margin: 35px 25px 0 25px;
         letter-spacing: 0.5px;
+    }
+
+    .third-block{
+        height: 250vh;
     }
 }

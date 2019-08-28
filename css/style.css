@@ -193,7 +193,7 @@ h4{
 }
 
 .third-block{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -257,7 +257,70 @@ h5{
 }
 
 .footer{
-    height: 20vh;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.rights{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rights p{
+    color: white;
+    font-family: DINPro;
+}
+
+.socials{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icons{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.twitter{
+    height: 50px;
+    width: 50px;
+    background: url("../Images/twitter.png") no-repeat;
+    background-size: cover;
+}
+
+.instagram{
+    height: 40px;
+    width: 40px;
+    background: url("../Images/instagram.png") no-repeat;
+    background-size: cover;
+}
+
+.facebook{
+    height: 40px;
+    width: 40px;
+    background: url("../Images/facebook.png") no-repeat;
+    background-size: cover;
+}
+
+.snapchat{
+    height: 50px;
+    width: 50px;
+    background: url("../Images/snapchat.png") no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 1000px){

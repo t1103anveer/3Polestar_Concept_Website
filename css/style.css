@@ -323,7 +323,7 @@ h5{
     background-size: cover;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1125px){
 
     .header-sub-title{
         font-size: 50px;
@@ -345,10 +345,14 @@ h5{
     .interior-text p{
         font-size: 16px;
     }
+
+    .third-block{
+        height: 170vh;
+    }
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
 
     .logo{
         position: fixed;
@@ -465,5 +469,29 @@ h5{
 
     .third-block{
         height: 250vh;
+    }
+
+    .twitter{
+        height: 25px;
+        width: 25px;
+    }
+
+    .instagram{
+        height: 20px;
+        width: 20px;
+    }
+
+    .facebook{
+        height: 20px;
+        width: 20px;
+    }
+
+    .snapchat{
+        height: 25px;
+        width: 25px;
+    }
+
+    .rights{
+        font-size: 12px;
     }
 }

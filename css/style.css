@@ -418,7 +418,7 @@ h5{
     }
 
     .first-block{
-        height: 85vh;
+        height: 100vh;
     }
 
     .video-container{
@@ -429,7 +429,6 @@ h5{
 
     .second-block{
         height: 150vh;
-        margin-top: 50px;
     }
 
     .performance-text{

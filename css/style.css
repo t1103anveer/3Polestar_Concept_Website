@@ -422,6 +422,7 @@ h5{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        height: calc(var(--vh, 1vh) * 100);
     }
 
     .video-container{
@@ -491,12 +492,12 @@ h5{
     }
 
     .facebook{
-        height: 20px;
+        height: 25px;
         width: 20px;
     }
 
     .snapchat{
-        height: 25px;
+        height: 30px;
         width: 25px;
     }
 

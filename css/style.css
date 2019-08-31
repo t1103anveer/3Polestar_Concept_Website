@@ -433,12 +433,12 @@ h5{
 
     .performance-text{
         max-width: 100%;
-        height: 25%;
+        height: 30%;
         order: 1;
     }
 
     .performance-picture{
-        height: 25%;
+        height: 20%;
     }
 
     .performance-text p{

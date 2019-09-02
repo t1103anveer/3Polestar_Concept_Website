@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polestar Concept</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP|Oswald|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="first-block">
+    <header>
+        <nav>
+            <div class="hamburger-menu">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
+            <div class="logo">
+                <h3 class="wow fadeInUp">POLESTAR</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="buy.html">Buy Now</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script>
+    $(document).ready(function() {
+        $(".hamburger-menu").on(selectEvents, function() {
+            $("nav ul").toggleClass("showing");
+
+        });
+    });
+
+    $(window).on("scroll", function () {
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    });
+
+    var selectEvents = (function() {
+        if ('ontouchstart' in document === true)
+            return 'touchstart';
+        else
+            return 'click';
+    })();
+</script>
+</body>
+</html>

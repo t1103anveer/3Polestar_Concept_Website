@@ -69,6 +69,7 @@ nav ul li a {
 nav ul li a:hover{
     color: #ffdd8c;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .hamburger-menu{
@@ -147,10 +148,6 @@ div .line-three{
     background-color: #000000;
     max-width: 50%;
     order: 1;
-}
-
-h3{
-    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h4{
@@ -338,6 +335,47 @@ h5{
     width: 100%;
     height: 100vh;
     display: flex;
+}
+
+.summary{
+    height: 50%;
+    width: 35%;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 7vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    padding: 25px;
+    border: 0.5px solid white;
+}
+
+.summary-left{
+    width: 50%;
+    height: 80%;
+
+}
+
+.summary-right{
+    width: 50%;
+    height: 80%;
+    text-align: right;
+}
+
+.summary p{
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.purchase-button{
+    height: 20%;
+    width: 100%;
+    text-align: right;
+}
+
+.purchase-text{
+    background-color: dodgerblue;
+
 }
 
 @media only screen and (max-width: 1125px){

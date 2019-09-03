@@ -262,6 +262,8 @@ h5{
     height: 10vh;
     width: 100%;
     display: flex;
+    align-items: flex-end;
+    order: 4;
 }
 
 .rights{
@@ -410,8 +412,13 @@ h5{
 .specifications{
     height: 30vh;
     order: 3;
-    margin: 5vh 5vw 0 5vw;
+    margin: 5vh 5vw 10vh 5vw;
     width: 50%;
+}
+
+.specifications > h2{
+    color: white;
+    margin: 0 0 2vh 0;
 }
 
 .nav-link{
@@ -602,7 +609,7 @@ h5{
     }
 
     .buy-now{
-        height: 100vh;
+        height: 200vh;
         align-items: flex-start;
     }
 
@@ -642,6 +649,10 @@ h5{
         color: #ffdd8c;
         font-weight: bold;
         letter-spacing: 3px;
+    }
+
+    .specifications{
+        height: 105vh;
     }
 
 }

@@ -671,4 +671,11 @@ h5{
         height: 105vh;
     }
 
+    .contact-block{
+        height: 110vh;
+        padding: 10vh;
+        color: white;
+
+    }
+
 }

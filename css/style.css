@@ -433,6 +433,15 @@ h5{
     color: white;
 }
 
+.contact-block{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    padding-top: 15vh;
+    color: white;
+}
 
 @media only screen and (max-width: 1125px){
 
